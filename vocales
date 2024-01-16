@@ -1,0 +1,26 @@
+#include <iostream>
+
+int main() {
+    char caracter;
+
+    // Solicitar al usuario que ingrese una letra
+    std::cout << "Ingrese una letra: " << std::endl;
+    
+    // Leer la letra ingresada por el usuario
+    std::cin >> caracter;
+
+    // Utilizar un switch para verificar si la letra es una vocal
+    switch (caracter) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            std::cout << "Es una vocal" << std::endl;
+            break;
+        default:
+            std::cout << "No es una vocal" << std::endl;
+    }
+
+    return 0;
+}
