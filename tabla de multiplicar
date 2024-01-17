@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Pedir al usuario que ingrese un número
+    cout << "Ingrese un numero para obtener su tabla de multiplicar: ";
+    
+    int numero;
+    cin >> numero;
+
+    // Imprimir la tabla de multiplicar
+    cout << "Tabla de multiplicar del " << numero << ":\n";
+    for (int i = 1; i <= 10; ++i) {
+        // Imprimir cada fila de la tabla de multiplicar
+        cout << numero << " x " << i << " = " << (numero * i) << endl;
+    }
+
+    return 0;
+}
