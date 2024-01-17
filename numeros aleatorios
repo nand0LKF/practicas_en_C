@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main() {
+    //para la generación de números aleatorios
+    srand(time(0));
+
+    // Número de elementos aleatorios que deseas generar
+    int n;
+
+    cout << "Ingrese la cantidad de numeros aleatorios que desea generar: ";
+    cin >> n;
+
+    // Generación y muestra de n números aleatorios en el rango de 0 a 99
+    cout << "Numeros aleatorios generados en el rango de 0 a 99: ";
+    for (int i = 0; i < n; ++i) {
+        cout << rand() % 100 << " ";  // Utilizando el operador módulo para limitar el rango
+    }
+
+    return 0;
+}
