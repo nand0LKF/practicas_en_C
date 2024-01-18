@@ -6,6 +6,7 @@ int main() {
     char opcion;
     string nombre;
 
+    // Solicitar el nombre del usuario
     cout << "Ingrese su nombre: ";
     getline(cin, nombre);
 
@@ -18,11 +19,13 @@ int main() {
         cout << "4. Mayor de 3 números" << endl;
         cout << "S. Salir" << endl;
 
+        // Solicitar al usuario que seleccione una opción
         cout << "Seleccione una opción: ";
         cin >> opcion;
 
         switch (opcion) {
             case '1': {
+                // Opción 1: Multiplicación con 2 números
                 double num1, num2;
                 cout << "Ingrese dos números para multiplicar: ";
                 cin >> num1 >> num2;
@@ -30,6 +33,7 @@ int main() {
                 break;
             }
             case '2': {
+                // Opción 2: División con 2 números
                 double num1, num2;
                 cout << "Ingrese dos números para dividir: ";
                 cin >> num1 >> num2;
@@ -41,6 +45,7 @@ int main() {
                 break;
             }
             case '3': {
+                // Opción 3: Multiplicación con 3 números
                 double num1, num2, num3;
                 cout << "Ingrese tres números para multiplicar: ";
                 cin >> num1 >> num2 >> num3;
@@ -48,6 +53,7 @@ int main() {
                 break;
             }
             case '4': {
+                // Opción 4: Encontrar el mayor de 3 números
                 double num1, num2, num3;
                 cout << "Ingrese tres números para encontrar el mayor: ";
                 cin >> num1 >> num2 >> num3;
@@ -61,9 +67,11 @@ int main() {
             }
             case 's':
             case 'S':
+                // Salir del programa
                 cout << "Saliendo del programa. ¡Hasta luego alumno, " << nombre << "!" << endl;
                 break;
             default:
+                // Opción no válida
                 cout << "Opción no válida. Inténtelo de nuevo." << endl;
         }
 
